@@ -3,7 +3,7 @@
 namespace WP_Rocket\Tests\Integration\Varnish;
 
 use Brain\Monkey\Functions;
-use WPMedia\PHPUnit\Integration\TestCase;
+use WP_Rocket\Tests\Integration\TestCase;
 
 /**
  * @covers WP_Rocket\Addon\Varnish\Varnish::purge
