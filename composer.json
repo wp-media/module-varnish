@@ -22,7 +22,6 @@
 		"php": "^5.6 || ^7",
 		"brain/monkey": "^2.0",
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-		"league/container": "^2.4",
 		"phpcompatibility/phpcompatibility-wp": "^2.0",
 		"phpstan/phpstan": "^0.12.3",
 		"phpunit/phpunit": "^5.7 || ^7",
@@ -30,6 +29,7 @@
 		"szepeviktor/phpstan-wordpress": "^0.5.0",
 		"wp-coding-standards/wpcs": "^2",
 		"wp-media/event-manager": "^3.1",
+		"wp-media/module-container": "^2.4",
 		"wp-media/options": "^3.0",
 		"wp-media/phpunit": "^1.0"
 	},
