@@ -5,7 +5,6 @@ use WP_Rocket\Engine\Container\ServiceProvider\AbstractServiceProvider;
 
 /**
  * Service provider for Varnish Addon.
- *
  */
 class ServiceProvider extends AbstractServiceProvider {
 
