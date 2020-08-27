@@ -8,7 +8,6 @@ use WP_Rocket\Event_Management\Subscriber_Interface;
  * Subscriber for the Varnish Purge.
  *
  * @since 3.5
- * @author Remy Perona
  */
 class Subscriber implements Subscriber_Interface {
 	/**
@@ -51,7 +50,6 @@ class Subscriber implements Subscriber_Interface {
 	 * Checks if Varnish cache should be purged
 	 *
 	 * @since 3.5
-	 * @author Remy Perona
 	 *
 	 * @return bool
 	 */
