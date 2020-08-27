@@ -96,9 +96,8 @@ class Test_Purge extends TestCase {
 						'X-Purge-Method' => 'default',
 					],
 				]
-			);
-
-		Functions\expect( 'wp_remote_request' )
+			)
+			->andAlsoExpectIt()
 			->once()
 			->with(
 				'http://127.0.0.1/about/',
