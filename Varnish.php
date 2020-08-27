@@ -59,7 +59,7 @@ class Varnish {
 		 *
 		 * @since 3.5
 		 *
-		 * @param array Array of arguments for the request.
+		 * @param array $args Array of arguments for the request.
 		 */
 		$args = apply_filters(
 			'rocket_varnish_purge_request_args',
