@@ -85,7 +85,7 @@ class Subscriber implements Subscriber_Interface {
 	/**
 	 * Clears a specific page in Varnish cache
 	 *
-	 * @param [type] $url The url to purge.
+	 * @param string $url The url to purge.
 	 * @return void
 	 */
 	public function clean_file( $url ) {
