@@ -90,3 +90,17 @@ if ( ! function_exists( 'get_rocket_parse_url' ) ) {
 		);
 	}
 }
+
+if ( ! function_exists( 'get_rocket_i18n_home_url' ) ) {
+	/**
+	 * Get home URL of a specific lang.
+	 *
+	 * @since 2.2
+	 *
+	 * @param  string $lang The language code. Default is an empty string.
+	 * @return string $url
+	 */
+	function get_rocket_i18n_home_url( $lang = '' ) { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals
+		return home_url();
+	}
+}
