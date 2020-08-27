@@ -2,7 +2,7 @@
 
 namespace WP_Rocket\Tests\Integration;
 
-use League\Container\Container;
+use WP_Rocket\Engine\Container\Container;
 use WP_Rocket\Admin\Options;
 use WP_Rocket\Event_Management\Event_Manager;
 
@@ -17,11 +17,11 @@ tests_add_filter(
 	'muplugins_loaded',
 	function() {
 		$container     = new Container();
-        $event_manager = new Event_Manager();
+		$event_manager = new Event_Manager();
 
-        add_filter( 'rocket_container', function() {
-            return $container;
-        } );
+		add_filter( 'rocket_container', function() use ( $container ) {
+			return $container;
+		} );
 
 		$container->add(
 			'options_api',
