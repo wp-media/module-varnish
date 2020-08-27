@@ -26,7 +26,7 @@
 		"phpstan/phpstan": "^0.12.3",
 		"phpunit/phpunit": "^5.7 || ^7",
 		"roave/security-advisories": "dev-master",
-		"szepeviktor/phpstan-wordpress": "^0.5.0",
+		"szepeviktor/phpstan-wordpress": "^0.6",
 		"wp-coding-standards/wpcs": "^2",
 		"wp-media/event-manager": "^3.1",
 		"wp-media/module-container": "^2.4",
