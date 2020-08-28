@@ -54,16 +54,16 @@ class Subscriber implements Subscriber_Interface {
 	 * @return bool
 	 */
 	private function should_purge() {
-		/**
-		 * Filters the use of the Varnish compatibility add-on
-		 *
-		 * @param bool $varnish_purge True to use, false otherwise.
-		 */
-		if ( ! apply_filters( 'do_rocket_varnish_http_purge', false ) && ! $this->options->get( 'varnish_auto_purge', 0 ) ) { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals
-			return false;
-		}
-
-		return true;
+		return (
+			/**
+			 * Filters the use of the Varnish compatibility add-on
+			 *
+			 * @param bool $varnish_purge True to use, false otherwise.
+			 */
+			apply_filters( 'do_rocket_varnish_http_purge', false ) // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals
+			||
+			(bool) $this->options->get( 'varnish_auto_purge', 0 )
+		);
 	}
 
 	/**
