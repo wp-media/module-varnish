@@ -52,7 +52,6 @@ tests_add_filter(
 function load_original_files_before_mocking() {
 	$fixtures = [
 		'/functions.php',
-		//'/i18n.php',
 	];
 	foreach ( $fixtures as $file ) {
 		require_once WPMEDIA_MODULE_TESTS_FIXTURES_DIR . $file;
