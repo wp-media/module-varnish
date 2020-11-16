@@ -1,4 +1,4 @@
-name: PHP CodeSniffer lint
+name: PHPCS lint
 
 on:
   pull_request:
