@@ -1,4 +1,4 @@
-name: Module-Varnish Test
+name: Module Test
 
 on:
   pull_request:
