@@ -41,7 +41,7 @@ jobs:
       run: echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
 
     - name: Remove unmet dependencies by legacy versions
-      run: composer remove --dev coenjacobs/mozart phpstan/phpstan szepeviktor/phpstan-wordpress
+      run: composer remove --dev --no-scripts phpstan/phpstan szepeviktor/phpstan-wordpress coenjacobs/mozart
     
     - name: Install dependencies
       run: composer install --prefer-dist --no-interaction --no-scripts
