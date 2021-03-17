@@ -9,6 +9,7 @@
 
 	<file>.</file>
 	<!-- Ignoring Files and Folders: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#ignoring-files-and-folders -->
+	<exclude-pattern>/Dependencies/*</exclude-pattern>
 	<exclude-pattern>/Tests/*</exclude-pattern>
 	<exclude-pattern>/vendor/*</exclude-pattern>
 
