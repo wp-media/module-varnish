@@ -2,7 +2,7 @@
 
 namespace WP_Rocket\Tests\Integration;
 
-use WP_Rocket\Engine\Container\Container;
+use WP_Rocket\Dependencies\League\Container\Container;
 use WP_Rocket\Admin\Options;
 use WP_Rocket\Event_Management\Event_Manager;
 
@@ -31,7 +31,7 @@ tests_add_filter(
 		);
 
 		$container->add( 'options', 'WP_Rocket\Admin\Options_Data' )
-			->withArgument( $container->get( 'options_api' )->get( 'settings', [] ) );
+			->addArgument( $container->get( 'options_api' )->get( 'settings', [] ) );
 
 		$container->addServiceProvider( 'WP_Rocket\Addon\Varnish\ServiceProvider' );
 

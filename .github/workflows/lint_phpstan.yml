@@ -3,7 +3,7 @@ name: PHPStan linting
 on:
   pull_request:
     branches:
-      - master
+      - trunk
       - develop
 
 jobs:
@@ -27,10 +27,12 @@ jobs:
         php-version: ${{ matrix.php-versions }}
         coverage: none  # XDebug can be enabled here 'coverage: xdebug'
         tools: composer:v1
+  
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-interaction --no-scripts
 
     # Linting
     - name: Lint with phpstan
       run: |
-        composer require --dev szepeviktor/phpstan-wordpress
-        vendor/bin/phpstan analyze
+        composer phpstan
         
